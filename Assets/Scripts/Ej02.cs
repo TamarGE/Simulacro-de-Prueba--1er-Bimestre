@@ -21,15 +21,15 @@ public class Ej02 : MonoBehaviour
         if (total > monto)
         {
             plata = total - monto;
-            Debug.Log("No alcanza el dinero. Faltan $" + plata + " para pagar los 3 productos");
+            Debug.Log("Supera el monto disponible. Faltan $" + plata + " para pagar los 3 productos");
         }
         else if (total < monto)
         {
             plata = monto - total;
-            Debug.Log("Sobra el dinero. El monto pasa por $" + plata + " del total para pagar los 3 productos");
+            Debug.Log("No supera el monto disponible. Sobran $" + plata + " para pagar los 3 productos");
         }
         else if(total == monto){
-            Debug.Log("Tenés el total exacto de dinero para pagar los 3 productos");
+            Debug.Log("No supera el monto disponible. Tenés el total exacto de dinero para pagar los 3 productos");
         }
      }
 
